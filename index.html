@@ -8,12 +8,18 @@
         />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Avocado</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
-            rel="stylesheet"
+                href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+                rel="stylesheet"
+                media="all"
         />
+        <link rel="preload" href="fonts/Bicubik.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="fonts/nasalization rg.woff2" as="font" type="font/woff2" crossorigin>
+
         <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/styles.min.css" />
     </head>
     <body>
         <div id="wrapper">
@@ -32,7 +38,11 @@
                         <ul class="navigation__list">
                             <li class="navigation__item navigation__item--mobile">
                                 <a href="" class="header__link">
-                                    <img src="images/fox.png" alt="" class="header__icon" />
+                                    <picture>
+                                        <source srcset="images/fox.webp" type="image/webp" class="header__icon">
+                                        <img src="images/fox.png" alt="" class="header__icon" />
+                                    </picture>
+
                                 </a>
                             </li>
                             <li class="navigation__item">
@@ -62,17 +72,37 @@
                         </ul>
                     </nav>
                     <a href="https://app.avonft.io/gallery-nft" class="header__btn btn--pink header__element"
-                        >Галерея NFT <img src="./images/circle_1.png" alt=""
-                    /></a>
+                        >Галерея NFT
+                        <picture>
+                            <source srcset="images/circle_1.webp" type="image/webp">
+                            <img src="images/circle_1.png" alt=""/>
+                        </picture>
+
+                    </a>
                 </div>
             </header>
             <main>
                 <article class="intro container">
-                    <img src="./images/circle_3.png" alt="" class="intro__img" />
-                    <img src="./images/circle_4.png" alt="" class="intro__img" />
-                    <img src="./images/main-top_1.png" alt="" class="intro__img" />
-                    <img src="./images/main-top_2.png" alt="" class="intro__img" />
-                    <img src="./images/diamond_1.png" alt="" class="intro__img" />
+                    <picture>
+                        <source srcset="images/circle_3.webp" type="image/webp" class="intro__img">
+                        <img src="images/circle_3.png" alt="" class="intro__img"/>
+                    </picture>
+                    <picture>
+                        <source srcset="images/circle_4.webp" type="image/webp" class="intro__img">
+                        <img src="images/circle_4.png" alt="" class="intro__img"/>
+                    </picture>
+                    <picture>
+                        <source srcset="images/main-top_1.webp" type="image/webp" class="intro__img">
+                        <img src="images/main-top_1.png" alt="" class="intro__img"/>
+                    </picture>
+                    <picture>
+                        <source srcset="images/main-top_2.webp" type="image/webp" class="intro__img">
+                        <img src="images/main-top_2.png" alt="" class="intro__img"/>
+                    </picture>
+                    <picture>
+                        <source srcset="images/diamond_1.webp" type="image/webp" class="intro__img">
+                        <img src="images/diamond_1.png" alt="" class="intro__img"/>
+                    </picture>
                     <span class="circle-neo"></span>
 
                     <div class="intro__heading heading">
@@ -101,7 +131,10 @@
                     <div class="container">
                         <div class="platform__left">
                             <div class="sq-neo"></div>
-                            <img src="./images/platform-img.png" alt="" />
+                            <picture>
+                                <source srcset="images/platform-img.webp" type="image/webp">
+                                <img src="images/platform-img.png" alt=""/>
+                            </picture>
                             <div class="platform__focus-desc">
                                 Все работы на нашем маркетплейсе созданы в стандарте BEP-1155 и размещены в блокчейне
                                 Binance Smart Chain. А купить их можно за внутренний токен нашей платформы — AVO
@@ -109,7 +142,10 @@
                         </div>
                         <div class="platform__right">
                             <div class="platform__heading heading">
-                                <img src="./images/diamond_2.png" alt="" />
+                                <picture>
+                                    <source srcset="images/diamond_2.webp" type="image/webp">
+                                    <img src="images/diamond_2.png" alt=""/>
+                                </picture>
                                 <div class="platform__name block-name">платформа</div>
                                 <h3 class="platform__title title">
                                     <span class="">avocado</span>
@@ -144,7 +180,11 @@
                             <div class="swiper-slide">
                                 <div class="benefits__item">
                                     <div class="benefits__heading">
-                                        <img src="images/benefits-icon_1.png" alt="" class="benefits__icon" />
+
+                                        <picture>
+                                            <source srcset="images/benefits-icon_1.webp" type="image/webp" class="benefits__icon">
+                                            <img src="images/benefits-icon_1.png" alt="" class="benefits__icon" />
+                                        </picture>
                                     </div>
                                     <div class="benefits__content">
                                         <div class="benefits__title">Первый маркетплейс в Telegram</div>
@@ -159,7 +199,10 @@
                             <div class="swiper-slide">
                                 <div class="benefits__item">
                                     <div class="benefits__heading">
-                                        <img src="images/benefits-icon_2.png" alt="" class="benefits__icon" />
+                                        <picture>
+                                            <source srcset="images/benefits-icon_2.webp" type="image/webp" class="benefits__icon">
+                                            <img src="images/benefits-icon_2.png" alt="" class="benefits__icon" />
+                                        </picture>
                                     </div>
                                     <div class="benefits__content">
                                         <div class="benefits__title">Полная правовая защита</div>
@@ -174,7 +217,10 @@
                             <div class="swiper-slide">
                                 <div class="benefits__item">
                                     <div class="benefits__heading">
-                                        <img src="images/benefits-icon_3.png" alt="" class="benefits__icon" />
+                                        <picture>
+                                            <source srcset="images/benefits-icon_3.webp" type="image/webp" class="benefits__icon">
+                                            <img src="images/benefits-icon_3.png" alt="" class="benefits__icon" />
+                                        </picture>
                                     </div>
                                     <div class="benefits__content">
                                         <div class="benefits__title">Удобство и свобода выбора</div>
@@ -189,7 +235,10 @@
                             <div class="swiper-slide">
                                 <div class="benefits__item">
                                     <div class="benefits__heading">
-                                        <img src="images/benefits-icon_5.png" alt="" class="benefits__icon" />
+                                        <picture>
+                                            <source srcset="images/benefits-icon_5.webp" type="image/webp" class="benefits__icon">
+                                            <img src="images/benefits-icon_5.png" alt="" class="benefits__icon" />
+                                        </picture>
                                     </div>
                                     <div class="benefits__content">
                                         <div class="benefits__title">Вы можете создать собственные NFT</div>
@@ -207,7 +256,10 @@
                             <div class="swiper-slide">
                                 <div class="benefits__item">
                                     <div class="benefits__heading">
-                                        <img src="images/benefits-icon_5.png" alt="" class="benefits__icon" />
+                                        <picture>
+                                            <source srcset="images/benefits-icon_5.webp" type="image/webp" class="benefits__icon">
+                                            <img src="images/benefits-icon_5.png" alt="" class="benefits__icon" />
+                                        </picture>
                                     </div>
                                     <div class="benefits__content">
                                         <div class="benefits__title">Или можете заказать разработку NFT у нас</div>
@@ -227,7 +279,10 @@
                     <ul class="benefits__list">
                         <li class="benefits__item">
                             <div class="benefits__heading">
-                                <img src="images/benefits-icon_1.png" alt="" class="benefits__icon" />
+                                <picture>
+                                    <source srcset="images/benefits-icon_1.webp" type="image/webp" class="benefits__icon">
+                                    <img src="images/benefits-icon_1.png" alt="" class="benefits__icon" />
+                                </picture>
                             </div>
                             <div class="benefits__content">
                                 <div class="benefits__title">Первый маркетплейс в Telegram</div>
@@ -239,7 +294,10 @@
                         </li>
                         <li class="benefits__item">
                             <div class="benefits__heading">
-                                <img src="images/benefits-icon_2.png" alt="" class="benefits__icon" />
+                                <picture>
+                                    <source srcset="images/benefits-icon_2.webp" type="image/webp" class="benefits__icon">
+                                    <img src="images/benefits-icon_2.png" alt="" class="benefits__icon" />
+                                </picture>
                             </div>
                             <div class="benefits__content">
                                 <div class="benefits__title">Полная правовая защита</div>
@@ -251,7 +309,10 @@
                         </li>
                         <li class="benefits__item">
                             <div class="benefits__heading">
-                                <img src="images/benefits-icon_3.png" alt="" class="benefits__icon" />
+                                <picture>
+                                    <source srcset="images/benefits-icon_3.webp" type="image/webp" class="benefits__icon">
+                                    <img src="images/benefits-icon_3.png" alt="" class="benefits__icon" />
+                                </picture>
                             </div>
                             <div class="benefits__content">
                                 <div class="benefits__title">Удобство и свобода выбора</div>
@@ -263,7 +324,10 @@
                         </li>
                         <li class="benefits__item">
                             <div class="benefits__heading">
-                                <img src="images/benefits-icon_4.png" alt="" class="benefits__icon" />
+                                <picture>
+                                    <source srcset="images/benefits-icon_4.webp" type="image/webp" class="benefits__icon">
+                                    <img src="images/benefits-icon_4.png" alt="" class="benefits__icon" />
+                                </picture>
                             </div>
                             <div class="benefits__content">
                                 <div class="benefits__title">Создавайте собственные NFT</div>
@@ -282,7 +346,10 @@
                         </li>
                         <li class="benefits__item">
                             <div class="benefits__heading">
-                                <img src="images/benefits-icon_5.png" alt="" class="benefits__icon" />
+                                <picture>
+                                    <source srcset="images/benefits-icon_5.webp" type="image/webp" class="benefits__icon">
+                                    <img src="images/benefits-icon_5.png" alt="" class="benefits__icon" />
+                                </picture>
                             </div>
                             <div class="benefits__content">
                                 <div class="benefits__title">Заказывайте разработку NFT у нас</div>
@@ -361,7 +428,10 @@
                                         пользователями путем одобрения публичных соглашений проекта Avocado NFT
                                     </div>
                                 </div>
-                                <img src="./images/about-avo.png" alt="" />
+                                <picture>
+                                    <source srcset="images/about-avo.webp" type="image/webp">
+                                    <img src="images/about-avo.png" alt="" />
+                                </picture>
                             </div>
                         </div>
                     </div>
@@ -374,35 +444,51 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="team__item">
-                                    <img src="images/team_1.png" alt="" class="team__img" />
+                                    <picture>
+                                        <source srcset="images/team_1.webp" type="image/webp" class="team__img">
+                                        <img src="images/team_1.png" alt="" class="team__img" />
+                                    </picture>
+
                                     <div class="team__profession">ceo</div>
                                     <div class="team__name">Кирилл Тюрин</div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="team__item">
-                                    <img src="images/team_2.png" alt="" class="team__img" />
+                                    <picture>
+                                        <source srcset="images/team_2.webp" type="image/webp" class="team__img">
+                                        <img src="images/team_2.png" alt="" class="team__img" />
+                                    </picture>
                                     <div class="team__profession">ol</div>
                                     <div class="team__name">Алексей Коваленко</div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="team__item">
-                                    <img src="images/team_3.png" alt="" class="team__img" />
+                                    <picture>
+                                        <source srcset="images/team_3.webp" type="image/webp" class="team__img">
+                                        <img src="images/team_3.png" alt="" class="team__img" />
+                                    </picture>
                                     <div class="team__profession">CBO</div>
                                     <div class="team__name">Степан Данилин</div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="team__item">
-                                    <img src="images/team_4.png" alt="" class="team__img" />
+                                    <picture>
+                                        <source srcset="images/team_4.webp" type="image/webp" class="team__img">
+                                        <img src="images/team_4.png" alt="" class="team__img" />
+                                    </picture>
                                     <div class="team__profession">clo</div>
                                     <div class="team__name">Георгий Троицкий</div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="team__item empty">
-                                    <img src="images/smile.png" alt="" />
+                                    <picture>
+                                        <source srcset="images/smile.webp" type="image/webp">
+                                        <img src="images/smile.png" alt="" />
+                                    </picture>
                                     <div class="team__message">
                                         Мы постоянно развиваемся и работаем с лидерами криптоиндустрии. Если ты хочешь
                                         создавать будущее вмесете с нами, мы всегда в поиске новых талантов!
@@ -416,22 +502,34 @@
 
                     <ul class="team__list">
                         <li class="team__item">
-                            <img src="images/team_1.png" alt="" class="team__img" />
+                            <picture>
+                                <source srcset="images/team_1.webp" type="image/webp" class="team__img">
+                                <img src="images/team_1.png" alt="" class="team__img" />
+                            </picture>
                             <div class="team__profession">ceo</div>
                             <div class="team__name">Кирилл Тюрин</div>
                         </li>
                         <li class="team__item">
-                            <img src="images/team_2.png" alt="" class="team__img" />
+                            <picture>
+                                <source srcset="images/team_2.webp" type="image/webp" class="team__img">
+                                <img src="images/team_2.png" alt="" class="team__img" />
+                            </picture>
                             <div class="team__profession">ol</div>
                             <div class="team__name">Алексей Коваленко</div>
                         </li>
                         <li class="team__item">
-                            <img src="images/team_4.png" alt="" class="team__img" />
+                            <picture>
+                                <source srcset="images/team_4.webp" type="image/webp" class="team__img">
+                                <img src="images/team_4.png" alt="" class="team__img" />
+                            </picture>
                             <div class="team__profession">clo</div>
                             <div class="team__name">Георгий Троицкий</div>
                         </li>
                         <li class="team__item empty">
-                            <img src="images/smile.png" alt="" />
+                            <picture>
+                                <source srcset="images/smile.webp" type="image/webp">
+                                <img src="images/smile.png" alt="" />
+                            </picture>
                             <div class="team__message">
                                 Мы постоянно развиваемся и работаем с лидерами криптоиндустрии. Если ты хочешь создавать
                                 будущее вмесете с нами, мы всегда в поиске новых талантов!
@@ -448,10 +546,16 @@
                     <a href="" class="footer__logo"><img src="images/logo.svg" alt="" /></a>
                     <div class="footer__desc">
                         <h3 class="footer__avo">
-                            <img src="./images/footer_logo.png" alt="" />
+                            <picture>
+                                <source srcset="images/footer_logo.webp" type="image/webp">
+                                <img src="images/footer_logo.png" alt="" />
+                            </picture>
                         </h3>
                         <h3 class="footer__avo footer__avo--mobile">
-                            <img src="./images/footer_logo--mobile.png" alt="" />
+                            <picture>
+                                <source srcset="images/footer_logo--mobile.webp" type="image/webp">
+                                <img src="images/footer_logo--mobile.png" alt="" />
+                            </picture>
                         </h3>
                         <div class="footer__description">Первый NFT маркетплейс в Telegram</div>
                         <div class="footer__copyright">(c) Все права защищены. ПАО «Авокадо НФТ», 2022</div>
@@ -494,7 +598,10 @@
                 </div>
                 <div class="footer__contacts">
                     <a href="" class="footer__transparent-btn">
-                        <img src="images/telegram.png" alt="" />
+                        <picture>
+                            <source srcset="images/telegram.webp" type="image/webp">
+                            <img src="images/telegram.png" alt="" />
+                        </picture>
                         <span>Telegram бот avonft Sport</span>
                     </a>
                     <ul class="footer__buttons">
@@ -519,7 +626,6 @@
         </footer>
 
         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-        <script src="https://kit.fontawesome.com/4cfcd34589.js" crossorigin="anonymous"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

@@ -3,16 +3,20 @@
     font-family: "Bicubik";
     src: url("../fonts/Bicubik.eot");
     src: local("../fonts/Bicubik"), url("../fonts/Bicubik.eot?#iefix") format("embedded-opentype"),
-        url("../fonts/Bicubik.woff") format("woff"), url("../fonts/Bicubik.ttf") format("truetype");
+        url("../fonts/Bicubik.woff") format("woff"), url("../fonts/Bicubik.ttf") format("truetype"),
+        url("../fonts/Bicubik.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Nasalization";
     font-style: normal;
     font-weight: normal;
-    src: local("Nasalization"), url("../fonts/nasalization rg.woff") format("woff");
+    src: local("Nasalization"), url("../fonts/nasalization rg.woff") format("woff"),
+    url("../fonts/nasalization rg.woff2") format("woff2");
+    font-display: swap;
 }
 
 * {
@@ -100,8 +104,7 @@ html {
             rgba(165, 239, 255, 0.2) 0%,
             rgba(110, 191, 244, 0.0447917) 77.08%,
             rgba(255, 255, 255, 0) 100%
-        )
-        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+        );
     background-blend-mode: overlay, normal;
     backdrop-filter: blur(10px);
     color: #fff;
@@ -399,8 +402,7 @@ p.description-focus:before {
     height: 236px;
     border: 13px solid #ffffff;
     border-radius: 50%;
-    filter: drop-shadow(0 0 1421px #ffffff) drop-shadow(0 0 812px #ffffff) drop-shadow(0 0 474px #ffffff)
-        drop-shadow(0 0 237px #ffffff) drop-shadow(0 0 68px #ffffff) drop-shadow(0 0 34px #ffffff);
+    filter: drop-shadow(0 0 1421px #ffffff) drop-shadow(0 0 812px #ffffff) drop-shadow(0 0 474px #ffffff) drop-shadow(0 0 237px #ffffff) drop-shadow(0 0 68px #ffffff) drop-shadow(0 0 34px #ffffff);
 }
 
 .intro {
